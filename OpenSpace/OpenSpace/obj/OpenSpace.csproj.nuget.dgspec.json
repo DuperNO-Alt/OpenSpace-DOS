@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Dell\\source\\repos\\OpenSpace\\OpenSpace\\OpenSpace.csproj": {}
+    "C:\\Users\\James\\Documents\\OpenSpace-DOS\\OpenSpace\\OpenSpace\\OpenSpace.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Dell\\source\\repos\\OpenSpace\\OpenSpace\\OpenSpace.csproj": {
+    "C:\\Users\\James\\Documents\\OpenSpace-DOS\\OpenSpace\\OpenSpace\\OpenSpace.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dell\\source\\repos\\OpenSpace\\OpenSpace\\OpenSpace.csproj",
+        "projectUniqueName": "C:\\Users\\James\\Documents\\OpenSpace-DOS\\OpenSpace\\OpenSpace\\OpenSpace.csproj",
         "projectName": "OpenSpace",
-        "projectPath": "C:\\Users\\Dell\\source\\repos\\OpenSpace\\OpenSpace\\OpenSpace.csproj",
-        "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dell\\source\\repos\\OpenSpace\\OpenSpace\\obj\\",
+        "projectPath": "C:\\Users\\James\\Documents\\OpenSpace-DOS\\OpenSpace\\OpenSpace\\OpenSpace.csproj",
+        "packagesPath": "C:\\Users\\James\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\James\\Documents\\OpenSpace-DOS\\OpenSpace\\OpenSpace\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\James\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,7 +26,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Users\\Dell\\AppData\\Roaming\\Cosmos User Kit\\packages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "C:\\Users\\James\\AppData\\Roaming\\Cosmos User Kit\\packages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -79,7 +84,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

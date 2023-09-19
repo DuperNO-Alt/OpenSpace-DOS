@@ -1,24 +1,37 @@
-﻿using System;
+﻿using Cosmos.System.ExtendedASCII;
+using Cosmos.System.FileSystem;
+using Cosmos.System.FileSystem.VFS;
+using OpenSpace.Shell;
+using System;
 using System.Collections.Generic;
-using System.Text;
 using Sys = Cosmos.System;
 
 namespace OpenSpace
 {
     public class Kernel : Sys.Kernel
     {
+        public static ShellManager cmdmgr;
+        public static List<Log.LogMessage> loglist;
+
+        public static CosmosVFS fs;
+
+        public static string currentDir = @"0:\";
+
 
         protected override void BeforeRun()
         {
-            Console.WriteLine("Cosmos booted successfully. Type a line of text to get it echoed back.");
+            Console.Clear();
+            Console.OutputEncoding = CosmosEncodingProvider.Instance.GetEncoding(437);
+
+            fs = new CosmosVFS();
+            VFSManager.RegisterVFS(fs);
+            cmdmgr = new ShellManager();
         }
 
         protected override void Run()
         {
-            Console.Write("Input: ");
-            var input = Console.ReadLine();
-            Console.Write("Text typed: ");
-            Console.WriteLine(input);
+            Console.Write("OpenSpace:-$ ");
+            cmdmgr.FilterInput(Console.ReadLine());
         }
     }
 }
